@@ -7,18 +7,26 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // Layer 0: Base com BT_CLR no lugar do 'Q' e studio_unlock no lugar do 'W'
+            // S43 (BT_CLR) está na RC(0,10) - Lado Direito
             bindings = <
-                &bt BT_CLR &studio_unlock &kp E     &kp R     &kp T     &kp Y     &kp U     &kp I          &kp O     &kp P     &kp A     &kp S     &kp D     &kp F     &kp G     &kp H
-                &kp Z      &kp X          &kp C     &kp V     &kp B     &kp N     &kp M     &kp COMMA      &kp DOT   &kp SLASH &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &kp N6
-                &kp N7     &kp N8         &kp N9    &kp N0    &kp MINUS &kp EQUAL &kp SPACE &kp ENTER      &kp ESC   &kp TAB   &kp BSPC  &kp DEL   &kp UP    &kp DOWN  &kp LEFT  &kp RIGHT
-                &kp F1     &kp F2         &kp F3    &kp F4    &kp F5    &kp F6    &kp F7                   &kp F8    &kp F9    &kp F10   &kp F11   &kp F12   &kp LSHFT &kp RSHFT
-                &kp LCTRL  &kp RCTRL      &kp LALT  &kp RALT  &kp LGUI                                     &kp RGUI  &kp PG_UP &kp PG_DN &kp K_MUTE &kp C_PP
+                &kp Q      &studio_unlock &kp E      &kp R      &kp T      &kp Y      &kp U      &kp I
+                &kp O      &kp P      &bt BT_CLR &kp A      &kp S      &kp D      &kp F      &kp G
+                
+                &kp Z      &kp X      &kp C      &kp V      &kp B      &kp N      &kp M      &kp COMMA
+                &kp DOT    &kp SLASH  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp N6
+                
+                &kp N7     &kp N8     &kp N9     &kp N0     &kp MINUS  &kp EQUAL  &kp SPACE  &kp ENTER
+                &kp ESC    &kp TAB    &kp BSPC   &kp DEL    &kp UP     &kp DOWN   &kp LEFT   &kp RIGHT
+                
+                &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &kp F7     
+                &kp F8     &kp F9     &kp F10    &kp F11    &kp F12    &kp LSHFT  &kp RSHFT
+                
+                &kp LCTRL  &kp RCTRL  &kp LALT   &kp RALT   &kp LGUI   
+                &kp RGUI   &kp PG_UP  &kp PG_DN  &kp K_MUTE &kp C_PP
             >;
         };
 
         layer_1 {
-            // Layer 1: Preparada para personalização no ZMK Studio
             bindings = <
                 &trans &trans &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans &trans &trans
@@ -29,7 +37,6 @@
         };
 
         layer_2 {
-            // Layer 2: Preparada para personalização no ZMK Studio
             bindings = <
                 &trans &trans &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans &trans &trans
@@ -40,7 +47,6 @@
         };
 
         layer_3 {
-            // Layer 3: Preparada para personalização no ZMK Studio
             bindings = <
                 &trans &trans &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans &trans &trans
