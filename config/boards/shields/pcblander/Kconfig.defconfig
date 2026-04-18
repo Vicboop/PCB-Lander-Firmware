@@ -1,0 +1,6 @@
+if SHIELD_PCBLANDER_LEFT || SHIELD_PCBLANDER_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "PCB-Lander de Vicente"
+
+endif
