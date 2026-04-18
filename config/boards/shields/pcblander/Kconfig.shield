@@ -3,3 +3,8 @@ config SHIELD_PCBLANDER_LEFT
 
 config SHIELD_PCBLANDER_RIGHT
     def_bool $(shields_list_contains,pcblander_right)
+
+# Adiciona este bloco para o ZMK Studio:
+config SHIELD_PCBLANDER
+    def_bool $(shields_list_contains,pcblander_left) || $(shields_list_contains,pcblander_right)
+    select ZMK_STUDIO_LAYOUT_SELECTION
