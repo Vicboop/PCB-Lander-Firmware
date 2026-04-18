@@ -1,9 +1,7 @@
 config SHIELD_PCBLANDER_LEFT
     def_bool $(shields_list_contains,pcblander_left)
-    # Esta linha é a "chave" para o Studio funcionar
     select ZMK_STUDIO_LAYOUT_SELECTION
 
 config SHIELD_PCBLANDER_RIGHT
     def_bool $(shields_list_contains,pcblander_right)
-    # A direita também precisa para não dar erro na compilação
     select ZMK_STUDIO_LAYOUT_SELECTION
