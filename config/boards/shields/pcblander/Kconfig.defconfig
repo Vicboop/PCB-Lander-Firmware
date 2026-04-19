@@ -3,8 +3,4 @@ if SHIELD_PCBLANDER_LEFT || SHIELD_PCBLANDER_RIGHT
 config ZMK_KEYBOARD_NAME
     default "PCBLander"
 
-# Esta é a chave mestra que o sistema estava a ignorar no outro ficheiro
-config ZMK_STUDIO_LAYOUT_SELECTION
-    default y
-
 endif
