@@ -1,5 +1,11 @@
 #include "pcblander.dtsi"
 
+/ {
+    chosen {
+        zmk,physical-layout = &physical_layout0;
+    };
+};
+
 &default_transform {
     col-offset = <8>;
 };
