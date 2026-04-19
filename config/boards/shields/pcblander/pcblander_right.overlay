@@ -1,5 +1,12 @@
 #include "pcblander.dtsi"
 
+/ {
+    chosen {
+        /* O Studio não corre aqui, por isso a direita PRECISA disto para não crashar! */
+        zmk,matrix-transform = &default_transform;
+    };
+};
+
 &default_transform {
     col-offset = <8>;
 };
