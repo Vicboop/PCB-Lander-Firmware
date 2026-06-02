@@ -1,0 +1,7 @@
+include:
+  - board: nice_nano//zmk
+    shield: pcblander_left
+    artifact-name: pcblander_left
+  - board: nice_nano//zmk
+    shield: pcblander_right
+    artifact-name: pcblander_right
